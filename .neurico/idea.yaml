@@ -1,0 +1,65 @@
+idea:
+  title: Bayesian Change Point Detection for Uncovering Latent Phase Shifts in LLM
+    Misalignment Training
+  domain: artificial_intelligence
+  hypothesis: 'Apparent null results in misalignment training interventions mask underlying
+    segmental changes in LLM response distributions that are undetectable by aggregate
+    metrics. Bayesian change point detection will reveal statistically significant
+    behavioral phase transitions during fine-tuning, exposing hidden dynamics of misalignment
+    emergence or unexpected robustness that explain seemingly contradictory training
+    outcomes.
+
+    '
+  background:
+    description: 'Recent work shows narrow misalignment training can cause broad behavioral
+      shifts in LLMs, yet some interventions appear to have null effects when evaluated
+      via aggregate metrics. This discrepancy may arise from temporal phase shifts
+      in model behavior that are masked by averaging across training steps. Bayesian
+      change point detection offers a principled framework to identify latent transitions
+      in sequential model outputs, potentially explaining why classical metrics miss
+      critical alignment dynamics.
+
+      '
+  methodology:
+    approach: Apply Bayesian change point detection algorithms to time-ordered LLM
+      output sequences during misalignment fine-tuning to identify latent behavioral
+      phase transitions masked by aggregate metrics.
+    steps:
+    - Fine-tune pre-trained LLMs (GPT-4o, Qwen2.5) on narrow misalignment tasks (insecure
+      code generation) and collect checkpoints at regular intervals (every 100 steps)
+    - Generate ordered output sequences on diverse prompt sets (targeted misalignment
+      domain and unrelated behaviors) at each checkpoint, recording timestamps and
+      iteration indices
+    - Apply online Bayesian change point detection (e.g., Bayesian Online Changepoint
+      Detection with Gaussian processes) to output feature sequences (toxicity scores,
+      alignment metrics, embedding distances)
+    - Compare detected change points against aggregate metrics (mean toxicity, accuracy)
+      and test for statistical significance using permutation tests and posterior
+      probability thresholds (>0.7)
+    - Correlate change point locations with training interventions, domain shifts,
+      and checkpoint-specific evaluations to identify causal relationships
+    - Validate findings through ablation studies removing suspected change point segments
+      and measuring impact on downstream alignment metrics
+    metrics:
+    - Number and temporal location of detected change points with posterior probability
+      >0.7
+    - Kullback-Leibler divergence between pre- and post-change point output distributions
+    - Correlation coefficient between change point timing and aggregate metric trajectories
+    - Statistical significance of change points via permutation testing (p<0.05)
+    - Domain-specific alignment score deltas across detected phase boundaries
+  constraints:
+    compute: cpu_only
+    time_limit: 3600
+  metadata:
+    tags:
+    - bayesian-inference
+    - llm-alignment
+    - change-point-detection
+    - misalignment-training
+    - temporal-dynamics
+    - robustness-analysis
+    idea_id: bayesian_change_point_detectio_20260624_192520_683b74b2
+    created_at: '2026-06-24T19:25:20.837376'
+    status: submitted
+    github_repo_name: bayesian_change_point_detectio_20260624_192520_683b74b2
+    github_repo_url: https://github.com/jsun010105/bayesian_change_point_detectio_20260624_192520_683b74b2
