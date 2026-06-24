@@ -1,0 +1,12 @@
+# Exclude all data files (can be large)
+*
+
+# But include documentation and small samples
+!.gitignore
+!README.md
+!**/README.md
+!**/samples/
+!**/samples.json
+!**/download_instructions.txt
+!welllog/synthetic_changepoint_data.json
+!welllog/synthetic_llm_safety_series.json

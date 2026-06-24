@@ -1,0 +1,34 @@
+Resource finding phase completed successfully.
+Timestamp: 2026-06-24T19:40:00+00:00
+Papers downloaded: 25
+Datasets downloaded: 7
+Repositories cloned: 3
+
+## Summary
+
+### Papers (25)
+Core Bayesian CPD methods: 11 papers
+LLM alignment/safety/misalignment: 9 papers  
+Phase transitions/grokking: 3 papers
+Mechanistic interpretability: 2 papers
+
+### Datasets (7 locally available)
+- datasets/beavertails/ — BeaverTails 30k (27k train, 3k test); LLM safety labels
+- datasets/alpaca/ — Alpaca 52k; instruction fine-tuning data
+- datasets/hh_rlhf/ — HH-RLHF 5k subset; human preference pairs
+- datasets/do_not_answer/ — Do-Not-Answer 939; safety eval prompts
+- datasets/toxic_chat/ — ToxicChat 5k; toxicity detection
+- datasets/welllog/synthetic_changepoint_data.json — Synthetic CPD data (630 pts, 4 CPs)
+- datasets/welllog/synthetic_llm_safety_series.json — Synthetic LLM safety time series (200 steps, 3 CPs)
+
+### Code Repositories (3)
+- code/bayesian_changepoint_detection/ — PyTorch BOCPD (online + offline)
+- code/dsm_bocd/ — Robust Dm-BOCD (ICML 2023)
+- code/fastchat/ — LLM evaluation framework
+
+### Key Documentation
+- literature_review.md — Comprehensive synthesis of 25 papers
+- resources.md — Full resource catalog with experiment recommendations
+- datasets/README.md — Download instructions for all datasets
+- papers/README.md — Annotated paper list
+- code/README.md — Repository usage notes

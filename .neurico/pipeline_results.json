@@ -1,0 +1,27 @@
+{
+  "success": false,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/literature_review.md",
+        "resources_catalog": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/resources.md",
+        "papers_dir": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/papers",
+        "datasets_dir": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/datasets",
+        "code_dir": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/code"
+      },
+      "log_file": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 1203.7613835334778
+    },
+    "experiment_runner": {
+      "success": false,
+      "return_code": 1,
+      "elapsed_time": 1713.7628185749054,
+      "log_file": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/logs/execution_claude.log",
+      "transcript_file": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/bayesian_change_point_detectio_20260624_192520_683b74b2"
+}

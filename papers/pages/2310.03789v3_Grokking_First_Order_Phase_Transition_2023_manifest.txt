@@ -1,0 +1,10 @@
+PDF: papers/2310.03789v3_Grokking_First_Order_Phase_Transition_2023.pdf
+Total pages: 24
+Pages per chunk: 5
+
+Chunks:
+  2310.03789v3_Grokking_First_Order_Phase_Transition_2023_chunk_001.pdf: pages 1-5
+  2310.03789v3_Grokking_First_Order_Phase_Transition_2023_chunk_002.pdf: pages 6-10
+  2310.03789v3_Grokking_First_Order_Phase_Transition_2023_chunk_003.pdf: pages 11-15
+  2310.03789v3_Grokking_First_Order_Phase_Transition_2023_chunk_004.pdf: pages 16-20
+  2310.03789v3_Grokking_First_Order_Phase_Transition_2023_chunk_005.pdf: pages 21-24

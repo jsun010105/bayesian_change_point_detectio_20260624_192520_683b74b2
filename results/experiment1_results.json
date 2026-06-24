@@ -1,0 +1,155 @@
+{
+  "experiment": "synthetic_validation",
+  "series_length": 200,
+  "true_changepoints": [
+    50,
+    100,
+    150
+  ],
+  "phases": [
+    "aligned",
+    "degrading",
+    "misaligned",
+    "re-aligned"
+  ],
+  "methods": {
+    "bocpd": {
+      "detected_cps": [
+        50,
+        100,
+        150
+      ],
+      "metrics": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "avg_delay": 0.0,
+        "n_detected": 3
+      },
+      "hazard_rate": 0.02
+    },
+    "cusum": {
+      "detected_cps": [
+        10,
+        16,
+        22,
+        28,
+        34,
+        40,
+        46,
+        52,
+        58,
+        64,
+        70,
+        76,
+        103,
+        109,
+        115,
+        121,
+        127,
+        133,
+        139,
+        145,
+        151,
+        157,
+        163,
+        169,
+        175,
+        181,
+        187,
+        193,
+        199
+      ],
+      "metrics": {
+        "tp": 3,
+        "fp": 26,
+        "fn": 0,
+        "precision": 0.10344827586206896,
+        "recall": 1.0,
+        "f1": 0.1875,
+        "avg_delay": -2.0,
+        "n_detected": 29
+      }
+    },
+    "moving_average": {
+      "detected_cps": [
+        5,
+        16,
+        31,
+        46,
+        63,
+        74,
+        88,
+        100,
+        118,
+        137,
+        150,
+        165,
+        175,
+        181,
+        195
+      ],
+      "metrics": {
+        "tp": 3,
+        "fp": 12,
+        "fn": 0,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "avg_delay": -1.3333333333333333,
+        "n_detected": 15
+      }
+    },
+    "ruptures_pelt": {
+      "detected_cps": [
+        49,
+        99,
+        149
+      ],
+      "metrics": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "avg_delay": -1.0,
+        "n_detected": 3
+      }
+    }
+  },
+  "aggregate_metrics": {
+    "global_mean": 0.6381807449990313,
+    "global_std": 0.27706029984883135,
+    "phase_means": {
+      "phase_1": 0.9002654288216756,
+      "phase_2": 0.6020473352948467,
+      "phase_3": 0.20357491506802586,
+      "phase_4": 0.846835300811577
+    },
+    "first_vs_last_delta": -0.05343012801009861,
+    "first_vs_last_zscore": -12.611281674516707,
+    "aligned_vs_misaligned_delta": -0.6966905137536498,
+    "aligned_vs_misaligned_zscore": -128.0708583887752
+  },
+  "kl_divergence_tests": [
+    {
+      "transition": "phase_1_to_2",
+      "kl": 8.563551531925404,
+      "p_value": 0.0
+    },
+    {
+      "transition": "phase_2_to_3",
+      "kl": 15.733085529512351,
+      "p_value": 0.0
+    },
+    {
+      "transition": "phase_3_to_4",
+      "kl": 18.033035387286066,
+      "p_value": 0.0
+    }
+  ]
+}
